@@ -1,0 +1,91 @@
+.listBox {
+    width: 600px;
+    height: fit-content;
+    background-color: #F2C6C2;
+    box-sizing: border-box;
+    @media screen and ( max-width: 768px) {
+        width: 90%;
+    }
+    .searchBox {
+        box-sizing: border-box;
+        height: 50px;
+        position: relative;
+        .searchBar {
+            width: fill-available;
+            height: 100%;
+            @media screen and ( max-width: 768px) {
+                border-radius: 40px;
+                border: none;
+                margin-top: 4px;
+            }
+        }
+        .searchListBox {
+            //  position: absolute;
+            width: 100%;
+            z-index: 1;
+            background-color: white;
+            &__item {
+                font-size: 15px;
+                padding: 10px 10px;
+                border-bottom: 1px solid #d3cfcf;
+                ;
+                margin: 0;
+            }
+        }
+    }
+    .optionBtn {
+        // width: 60px;
+        padding: 5px;
+        margin: 10px;
+        border: none;
+    }
+    .listElemnt {
+        display: flex;
+        margin: 10px 0;
+        height: 50px;
+        gap: 10px;
+        &__idNo {
+            background-color: #F28585;
+            font-size: 23px;
+            width: 50px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui;
+            @media screen and ( max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+        &__idName {
+            background-color: #F28585;
+            font-size: 23px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-family: system-ui;
+            width: fill-available;
+            padding: 0 0 0 10px;
+            @media screen and ( max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+    }
+    @keyframes animation {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            margin-left: 100px;
+        }
+    }
+    .removing {
+        animation: animation 1s forwards;
+    }
+    .removeBtn {
+        background-color: tomato;
+        border: none;
+        border-radius: 10px;
+    }
+}

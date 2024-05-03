@@ -1,0 +1,35 @@
+    .detailsBox {
+        // border: 1px solid;
+        width: 600px;
+        // height: 200px;
+        display: flex;
+        box-shadow: 1px 1px 1px 1px #a5a5a5;
+        animation: renderAnimation 1s forwards;
+        &__imgBox {
+            // border: 1px solid red;
+        }
+        .infobox {
+            //  border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: fill-available;
+            .info {
+                border-bottom: 1px solid orangered;
+                font-family: monospace;
+            }
+            .heading {
+                font-family: monospace;
+            }
+        }
+    }
+    
+    @keyframes renderAnimation {
+        from {
+            margin-top: -50px;
+        }
+        to {
+            margin: 0;
+        }
+    }
